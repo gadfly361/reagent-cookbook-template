@@ -5,5 +5,18 @@ This is a leiningen template specifically for following along with [reagent-cook
 # Usage
 
 ```
-$ lein new rc <name>
+$ lein new rc <name of app>
 ```
+
+Compile cljs files.
+
+```
+$ lein cljsbuild once
+```
+
+Start a server.
+
+```
+$ lein ring server
+```
+
