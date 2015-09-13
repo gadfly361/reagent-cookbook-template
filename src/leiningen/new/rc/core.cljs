@@ -2,9 +2,11 @@
     (:require [reagent.core :as reagent]))
 
 (defn home []
-  [:div [:h1 "Welcome to Reagent Cookbook!"]
+  [:div
    
    ])
 
-(reagent/render-component [home]
-                          (.getElementById js/document "app"))
+(defn ^:export main []
+  (reagent/render [home]
+                  (.getElementById js/document "app")))
+
