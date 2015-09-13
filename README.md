@@ -12,14 +12,6 @@ $ lein new rc <name of app>
 
 Compile clojurescript files to a javascript file.
 
-*Development:*
-
-```
-$ lein cljsbuild once dev
-```
-
-*Production:*
-
 ```
 $ lein cljsbuild once prod
 ```
