@@ -1,4 +1,4 @@
-(defproject rc/lein-template "0.1.2"
+(defproject rc/lein-template "0.1.3"
   :description "Template for Reagent Cookbook recipes"
   :url "https://github.com/gadfly361/reagent-cookbook-template"
   :license {:name "Eclipse Public License"

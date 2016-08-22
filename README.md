@@ -4,13 +4,23 @@ This is a leiningen template specifically for following along with [reagent-cook
 
 # Usage
 
-Create an application.
+## Create an application.
 
 ```
 $ lein new rc <name of app>
 ```
 
-Compile clojurescript files to a javascript file.
+## Compile cljs to js
+
+### For development:
+
+```
+$ lein figwheel dev
+```
+
+Wait a bit, then browse to [http://localhost:3449](http://localhost:3449).
+
+### For production:
 
 ```
 $ lein cljsbuild once prod

@@ -1,12 +1,20 @@
 (ns {{ns-name}}.core
-    (:require [reagent.core :as reagent]))
+  (:require [reagent.core :as reagent]))
 
-(defn home []
+
+(defonce app-state
+  (reagent/atom {}))
+
+
+(defn page [ratom]
   [:div
-   
+   [:h1 "Reagent Cookbook Template"]
    ])
 
-(defn ^:export main []
-  (reagent/render [home]
+
+(defn reload []
+  (reagent/render [page app-state]
                   (.getElementById js/document "app")))
 
+(defn ^:export main []
+  (reload))
